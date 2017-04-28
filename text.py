@@ -9,12 +9,12 @@ text = f.readlines()
 page = []
 
 for row in text:
-	for char in row:
-		if ord(char) >= 48 and ord(char)<= 57: #remove all digits
-			break
-		else:
-			page.append(row)
-			break
+    for char in row:
+        if ord(char) >= 48 and ord(char)<= 57: #remove all digits
+            break
+        else:
+            page.append(row)
+            break
 f.close()
 
 text = "".join(page)
