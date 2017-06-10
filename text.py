@@ -3,7 +3,7 @@ import easygui,os
 input_path = easygui.tk_FileDialog.askopenfilename(title='選擇文字檔案') #path of the file
 
 
-f = open(input_path,'r',encoding="ASCII")
+f = open(input_path,'r')
 text = f.readlines()
 
 page = []
